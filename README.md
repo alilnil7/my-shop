@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My-Shop
 
-## Getting Started
+My-Shop is a simple e-commerce application built with [Next.js](https://nextjs.org/). This project demonstrates a shopping cart functionality with a dynamic product list and an interactive cart page.
 
-First, run the development server:
+## Features
 
+- **Product Listing:** Display a list of available products.
+- **Shopping Cart:** Add and remove items from the cart.
+- **Dynamic Routing:** Navigate between pages for products and the cart.
+- **Responsive Design:** Mobile and desktop-friendly layout.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/) (version 16 or later recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Git](https://git-scm.com/)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/my-shop.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd my-shop
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+### Running the Development Server
+
+To start the development server, run:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the application for production, run:
+```bash
+npm run build
+```
 
-## Learn More
+This will generate an optimized build in the `.next` folder.
 
-To learn more about Next.js, take a look at the following resources:
+### Starting the Production Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the production server, after building, run:
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The production server will be available at [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## File Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```plaintext
+my-shop/
+├── app/
+│   ├── cart/
+│   │   └── page.js      # Cart page
+│   ├── context/
+│   │   └── CartContext.js # Cart context for state management
+│   ├── globals.css      # Global styles
+│   ├── layout.js        # Root layout
+│   └── page.js          # Home page
+├── public/
+│   ├── apple.png        # Product images
+│   ├── banana.png
+│   └── grape.png
+├── .gitignore           # Git ignored files
+├── package.json         # Project metadata and dependencies
+├── README.md            # Project documentation
+└── next.config.js       # Next.js configuration
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technologies Used
+
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **React**: Frontend library for building user interfaces.
+- **CSS**: Styling for the application.
+
+## Screenshots
+
+### Home Page
+![Home Page](public/screenshot-home.png)
+
+### Cart Page
+![Cart Page](public/screenshot-cart.png)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Vercel](https://vercel.com/) for hosting Next.js applications
+
+
+
+
+
